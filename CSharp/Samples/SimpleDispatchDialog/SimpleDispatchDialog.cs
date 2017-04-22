@@ -96,7 +96,7 @@ namespace Microsoft.Bot.Sample.SimpleDispatchDialog
         [ScorableGroup(2)]
         public async Task Echo(IDialogContext context, IActivity activity, [Entity("echo")] string echoString)
         {
-            await context.PostAsync($"{this.count++}: You said {echoString}");
+            await context.PostAsync($"{this.count++}: SimpleDispatchYou said {echoString}");
         }
 
         // Since none of the scorables in previous group won, the dialog send help message.

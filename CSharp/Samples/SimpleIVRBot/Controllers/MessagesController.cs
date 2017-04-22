@@ -20,7 +20,7 @@ namespace Microsoft.Bot.Sample.SimpleIVRBot
         public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
         {
             var message = await argument;
-            await context.PostAsync("You said: " + message.Text);
+            await context.PostAsync("SimpleIVRYou said: " + message.Text);
             context.Wait(MessageReceivedAsync);
         }
     }
