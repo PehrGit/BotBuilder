@@ -44,7 +44,7 @@ namespace Microsoft.Bot.Sample.EchoBot
                         int count;
                         context.UserData.TryGetValue("count", out count);
                         context.UserData.SetValue("count", ++count);
-                        string reply = string.Format("{0}: You said {1}", count, txt);
+                        string reply = string.Format("{0}: Jij zei2 {1}", count, txt);
                         return Chain.Return(reply);
                     }))
             .Unwrap()

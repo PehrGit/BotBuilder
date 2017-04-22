@@ -17,7 +17,7 @@ namespace Microsoft.Bot.Sample.EchoBot
             if (message.Text.ToLower() == "makeattachment")
             {
                 var reply = context.MakeMessage();
-                reply.Text = string.Format("{0}: You said {1}", this.count++, message.Text);
+                reply.Text = string.Format("{0}: Jij zei {1}", this.count++, message.Text);
 
                 reply.Attachments = new List<Attachment>();
 

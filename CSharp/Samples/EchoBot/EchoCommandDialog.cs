@@ -34,7 +34,7 @@ namespace Microsoft.Bot.Sample.EchoBot
             var message = await msg;
             context.UserData.TryGetValue("count", out count);
             context.UserData.SetValue("count", ++count);
-            await context.PostAsync(string.Format("{0}: You said {1}", count, message.Text));
+            await context.PostAsync(string.Format("{0}: Jij zei3 {1}", count, message.Text));
             context.Wait(dialog.MessageReceived);
         });
 

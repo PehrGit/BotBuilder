@@ -29,7 +29,7 @@ namespace Microsoft.Bot.Sample.EchoBot
             }
             else
             {
-                await context.PostAsync($"{this.count++}: You said {message.Text}");
+                await context.PostAsync($"{this.count++}: Jij zei4 {message.Text}");
                 context.Wait(MessageReceivedAsync);
             }
         }
